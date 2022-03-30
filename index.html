@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Warren Website</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/font-awesome.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="../assets/images/favicon.ico">
+</head>
+<body>
+  <!-- MAIN START -->
+  <div class = "main">
+
+    <!-- Header Start -->
+    <header class="header">
+      <div class="container">
+        <div class="row flex-end">
+          <button class="nav-toggler">
+            <span></span>
+          </button>
+          <nav class="nav hidden">
+            <div class="nav-inner hidden">
+              <ul>
+                <li><a href="#" class="nav-item">Home</a></li>
+                <li><a href="#" class="nav-item">About Me</a></li>
+                <li><a href="#" class="nav-item">Portfolio</a></li>
+                <li><a href="#" class="nav-item">Contact Me</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Home Section Start -->
+    <section class = "home-section align-items-center">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="home-text">
+            <p>Hello, I'm</p>
+            <h1>Warren Fongang</h1>
+            <h2 id="profession">Software Engineer</h2>
+            <a href="" class="btn">More About Me</a>
+            <a href="" class="btn">Portfolio</a><br>
+            
+          </div>
+          <div class="home-img">
+            <div class="img-box">
+              <img id="profile-img" src="assets/images/Warren-Data.png" alt="warren-image">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Home Section End -->
+
+    <!-- About Section Start -->
+    <section class="about-section sec-padding ">
+      <div class="container">
+        <div class="row">
+          <div class="section-title">
+            <h2>About Me</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="about-img">
+            <div class="img-box">
+              <img id = "about_img" src="assets/images/undraw_programming_re_kg9v.svg" alt="programming">
+            </div>
+          </div>
+          <div class="about-text">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, natus architecto pariatur, dolore quisquam praesentium odit sint hic mollitia sunt quidem, aperiam delectus temporibus repellat et? Iusto distinctio alias veritatis.
+            </p>
+            <h2>My Skills</h2>
+            <div class="skills">
+              <div class="skill-item">HTML</div>
+              <div class="skill-item">CSS</div>
+              <div class="skill-item">Javascript</div>
+              <div class="skill-item">React Js</div>
+              <div class="skill-item">Bootstrap</div>
+              <div class="skill-item">Python</div>
+              <div class="skill-item">Django</div>
+              <div class="skill-item">Java</div>
+              <div class="skill-item">Spring</div>
+              <div class="skill-item">C</div>
+              <div class="skill-item">SQL</div>
+            </div>
+
+            <div class="about-tabs">
+              <button type="button" class="tab-item active" data-target="#education">Education</button>
+              <button type="button" class="tab-item" data-target="#experience">Experience</button>
+            </div>
+
+            <!-- Education Start -->
+            <div class="tab-content active" id="education">
+              <div class="timeline">
+                <div class="timeline-item">
+                  <span class="Date">2019 - 2023</span>
+                  <h4>Bachelor of Science In Computer Science - <span>PKFOKAM INSTITUTE OF EXCELLENCE</span></h4>
+                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias, hic minima maxime corporis iste temporibus ducimus, ab cumque qui dicta accusamus. Quos tempora cumque reiciendis consequatur animi ipsa aspernatur deserunt.</p>
+                </div>
+                <div class="timeline-item">
+                  <span class="Date">2022</span>
+                  <h4>Google Data Analytics Professional Certificates - <span>COURSERA</span></h4>
+                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias, hic minima maxime corporis iste temporibus ducimus, ab cumque qui dicta accusamus. Quos tempora cumque reiciendis consequatur animi ipsa aspernatur deserunt.</p>
+                </div>
+              </div>
+            </div>
+            <!-- Education End -->
+
+            <!-- Experience Start -->
+            <div class="tab-content" id="experience">
+              <div class="timeline">
+                <div class="timeline-item">
+                  <span class="Date">2021</span>
+                  <h4>Software Engineer Intern - <span>Elios Consulting</span></h4>
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio quas ipsum minus eligendi aperiam esse accusantium quidem minima delectus, architecto ullam veniam quam ipsam consequuntur necessitatibus laboriosam aut itaque voluptatem?</p>
+                </div>
+                <div class="timeline-item">
+                  <span class="Date">2022</span>
+                  <h4>Junior Data Analyst - <span>Rhema Analytics SARL</span></h4>
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio quas ipsum minus eligendi aperiam esse accusantium quidem minima delectus, architecto ullam veniam quam ipsam consequuntur necessitatibus laboriosam aut itaque voluptatem?</p>
+                </div>
+              </div>
+            </div>
+            <!-- Experience End -->
+            <a href="#" class = "btn">Download CV</a>
+            <a href="#" class="btn">Transcript</a>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    
+
+    <!-- About Section End -->
+
+    <!-- Portfolio Section Start -->
+    <section class="portfolio-section hidden">
+      <div class="container">
+        <div class="row">
+          <div class="section-title">
+            <h2>Welcome to My Portfolio</h2>
+          </div>
+        </div>
+        <div class="row">
+          <!-- Portfolio-Item -->
+          <div class="portfolio-item">
+            <div class="portfolio-item-thumbnail">
+              <img src="assets/images/4.jpg" alt="">
+            </div>
+            <h3 class="portfolio-item-title">TimeTable Scheduler</h3>
+            <button type = "button" class="btn view-project-btn">View Project</button>
+            <div class="portfolio-item-details">
+              <div class="description">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat, tenetur eaque. Ab, aut itaque consequuntur perferendis, magni laudantium placeat, dolorem nisi cumque a nostrum ea ratione voluptatem quia eos laboriosam!</p>
+              </div>
+              <div class="general-info">
+                <ul>
+                  <li>Created - <span>28 Juin 2020</span></li>
+                  <li>Tech Stack - <span>Java, JavaFx</span></li>
+                  <li>View Online - <span><a href="#" target="_blank">www.genetic.com</a></span></li>
+
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Portfolio Section End -->
+
+    
+
+
+
+  </div>
+  <!-- MAIN END -->
+  <!-- Portfolio Item Details Popup Start -->
+  <div class="portfolio-popup hidden">
+    <div class="pp-inner">
+      <div class="pp-content">
+        <div class="pp-header">
+          <button type ="button" class="btn pp-close"><i class="fas fa-times"></i></button>
+          <div class="pp-thumbnail">
+            <img src="assets/images/4.jpg" alt="pp-thumbnail">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Portfolio Item Details Popup End -->
+  <embed src="assets/music/Tokyo Music Walker -  Colorful Flowers.mp3" loop="true" autostart="true" width="2" height="0">
+  <script src="js/script.js"></script>
+</body>
+</html>
