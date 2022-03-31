@@ -22,7 +22,7 @@ Variables
 
 @font-face {
     font-family: Poppins;
-    src: url("../assets/fonts/");
+    src: url("../assets/fonts/Poppins-Regular.otf");
 }
 
 
@@ -54,8 +54,12 @@ body{
     line-height: 1.5;
     overflow-x: hidden;
     -webkit-tap-highlight-color: transparent;
-    padding: 5vh 15px;
-    font-family: fa_solid;
+    padding: 35px 15px;
+    font-family: Poppins;
+}
+
+body.hide-scrolling{
+    overflow-y: hidden;
 }
 
 body::before{
@@ -77,6 +81,8 @@ a{
 
 h1,h2{
     font-weight: 700;
+    color: #14213D;
+    font-family: CatchyMager;
 }
 
 h3, h4, h5, h6{
@@ -88,12 +94,26 @@ img{
     vertical-align: middle;
 }
 
+ul{
+    list-style: none;
+}
+
 section{
     background-color: var(--white-alpha-25);
     border: 1px solid var(--white);
-    min-height: 90vh;
+    min-height: calc(100vh - 70px);
     border-radius: 30px;
     backdrop-filter: var(--backdrop-filter-blur);
+    display: none;
+}
+
+section.active{
+    display: block;
+    animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+section.fade-out{
+    animation: fadeOut 0.5s ease-in-out forwards;
 }
  
 .main{
@@ -101,6 +121,10 @@ section{
     margin: auto;
     transition: all 1s ease-in-out;
     position: relative;
+}
+
+.main.fade-out{
+    opacity: 0;
 }
 
 .container{
@@ -180,7 +204,7 @@ button{
     position: relative; 
     overflow: hidden;
     vertical-align: middle;
-    transition: color 0.3s ease;
+    transition: color 0.8s ease;
 }
 
 .btn::before{
@@ -192,7 +216,7 @@ button{
     width: 0%;
     background-color: var(--main-color);
     z-index: -1;
-    transition: width 0.3s ease;
+    transition: width 0.8s ease;
 }
 
 .btn:hover::before{
@@ -201,6 +225,27 @@ button{
 
 .btn:hover{
     color: var(--white);
+}
+
+
+/* ANIMATIONS */
+
+@keyframes fadeOut{
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
 
 /* Header  */
@@ -212,6 +257,17 @@ button{
     width: 100%;
     z-index: 1;
     padding: 20px 0 0  ;
+}
+
+.header.active{
+    position: fixed;
+    top: 35px;
+    padding: 20px 15px;
+}
+
+.header.active .container{
+    max-width: 1200px;
+    margin: auto;
 }
 
 .header .nav-toggler{
@@ -226,6 +282,13 @@ button{
     align-items: center;
     justify-content: center;
     margin: 0 15px;
+    z-index: 1;
+    transition: opacity 1s ease-in-out;
+}
+
+.header .nav-toggler.hide{
+    opacity: 0;
+    transition: none;
 }
 
 .header .nav-toggler span{
@@ -233,6 +296,11 @@ button{
     width: 24px;
     background-color: var(--main-color);
     position: relative;
+    transition: background-color 0.8s ease;
+}
+
+.header.active .nav-toggler span{
+    background-color: transparent;
 }
 
 .header .nav-toggler span::before,
@@ -251,13 +319,21 @@ button{
     transform: translateY(-8px);
 }
 
+.header.active .nav-toggler span::before{
+    transform: rotate(45deg);
+}
+
 .header .nav-toggler span::after{
     right: 0;
     transform: translateY(8px);
 }
 
-.header .nav-toggler:hover span::before,
-.header .nav-toggler:hover span::after{
+.header.active .nav-toggler span::after{
+    transform: rotate(-45deg);
+}
+
+.header:not(.active) .nav-toggler:hover span::before,
+.header:not(.active) .nav-toggler:hover span::after{
     width: 50%; 
 }
 
@@ -268,6 +344,12 @@ button{
     height: 100%;
     width: 100%;
     padding: 35px 15px;
+    overflow-y: auto;
+    visibility: hidden;
+}
+
+.header.active .nav{
+    visibility: visible;
 }
 
 .header .nav-inner{
@@ -279,14 +361,58 @@ button{
     backdrop-filter: var(--backdrop-filter-blur);
     padding: 50px 0;
     border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: all 1s ease;
+}
+.header.active .nav-inner{
+    opacity: 1;
 }
 
+.header .nav-inner ul li{
+    text-align: center;
+    font-family: CatchyMager;
+}
 
+.header .nav-inner ul li a{
+    font-size: 40px;
+    text-transform: capitalize;
+    color: var(--blue-dark);
+    font-weight: 600;
+    padding: 2px 15px;
+    transition: color 0.5s ease;
+    position: relative;
+}
+
+.header .nav-inner ul li a::before{
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 0%;
+    background-color: var(--white-alpha-25);
+    z-index: -1;
+    transition: width 1s ease;
+}
+
+.header .nav-inner ul li a:hover::before{
+    width: 100%;
+}
+
+.header .nav-inner ul li a:hover{
+    color: var(--main-color);
+}
 
 /* HOME SECTION */
 .home-section{
-    display: flex;
     padding: 120px 0;
+}
+
+.home-section.active{
+    display: flex;
 }
 
 
@@ -302,7 +428,9 @@ button{
     text-transform: capitalize;
     transition: 0.5s;
     cursor: context-menu;
+    font-family: Poppins;
 }
+
 
 .home-text h1:hover{
     -webkit-text-stroke: 0.3px var(--white);
@@ -314,7 +442,8 @@ button{
     font-size: 30px;
     text-transform: capitalize;
     font-weight: 300;
-    margin: 0 0 30px
+    margin: 0 0 30px;
+    font-family: Poppins;
 }
 
 .home-text .btn{
@@ -541,6 +670,12 @@ button{
     height: 100%;
     width: 100%;
     z-index: 200;
+    visibility: hidden;
+    
+}
+
+.portfolio-popup.open{
+    visibility: visible;
     overflow-y: auto;
 }
 
@@ -560,6 +695,14 @@ button{
     width: 100%;
     border: 1px solid var(--white-alpha-40);
     backdrop-filter: var(--backdrop-filter-blur);
+    opacity: 0;
+    transform: scale(0.9) ;
+}
+
+.portfolio-popup.open .pp-content{
+    opacity: 1;
+    transform: scale(1);
+    transition: all 1s ease;
 }
 
 .pp-header{
@@ -582,3 +725,168 @@ button{
     border-radius: 10px;
 }
 
+.pp-header h3{
+    font-size: 25px;
+    text-transform: capitalize;
+    margin: 20px 0 15px;
+}
+
+.pp-body .description{
+    margin-bottom: 20px;
+}
+
+.pp-body .general-info li{
+    margin-bottom: 10px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.pp-body .general-info li span{
+    font-weight: 300;
+}
+
+.pp-body .general-info li a{
+    text-transform: lowercase;
+    color: var(--main-color);
+}
+
+/* Contact Section */
+
+.contact-form, .contact-info{
+    width: 50%;
+    padding: 0 15px;
+}
+
+.contact-form .input-group{
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.contact-form .input-control::placeholder{
+    color: var(--blue-dark);
+    opacity: 0.8;
+    font-weight: 300;
+}
+
+.contact-form .input-control{
+    display: block;
+    width: 100%;
+    height: 50px;
+    border-radius: 25px;
+    border: none;
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 16px;
+    background-color: var(--white-alpha-25);
+    padding: 0 20px;
+    color: var(--blue-dark);
+    border: 1px solid transparent;
+    transition: border-color 0.8s ease;
+}
+
+.contact-form .input-control:focus{
+    border-color: var(--white-alpha-40);
+}
+
+.contact-form textarea.input-control{
+    height: 120px;
+    resize: none;
+    padding-top: 15px;
+}
+
+.contact-info-item{
+    margin: 0 0 30px;
+    padding: 0 0 0 20px;
+}
+
+.contact-info-item h3{
+    font-size: 20px;
+    text-transform: capitalize;
+    margin: 0 0 5px;
+}
+
+.contact-info-item .social-links a{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    background-color: var(--white-alpha-25);
+    border: 1px solid var(--white-alpha-40);
+    color: var(--main-color);
+    border-radius: 50%;
+    margin: 6px 40px 0 0;
+    transition: all 1s ease;
+}
+
+.contact-info-item .social-links a:hover{
+    color: var(--white);
+    background-color: var(--main-color);
+}
+
+/* RESPONSIVE */
+
+@media(max-width:991px){
+    .container{
+        padding: 0;
+    }
+    .home-text,.home-img{
+        width: 100%;
+    }
+    .home-text{
+        text-align: center;
+    }
+    .home-img{
+        order: -1;
+    }
+    .home-img .img-box{
+        max-width: 300px;
+    }
+    .home-text .btn{
+        margin: 0 7px 15;
+    }
+    .portfolio-item{
+        width: calc(50% - 30px);
+    }
+}
+
+@media(max-width:767px){
+    .contact-form, .contact-info,.about-img,.about-text{
+        width: 100%;
+    }
+    .about-text{
+        margin-top: 30px;
+    }
+    .portfolio-item{
+        width: cal(100% - 30px);
+    }
+    .pp-inner{
+        padding: 30px 15px;
+    }
+
+    .contact-info{
+        order: -1;
+        margin-bottom: 15px;
+    }
+    .contact-info-item{
+        padding: 0;
+    }
+}
+
+@media(max-width:575px){
+    .section-title h2,.header .nav-inner ul li a{
+        font-size: 35px;
+    }
+    .home-text h1{
+        font-size: 30px;
+    }
+
+    .home-text h2{
+        font-size: 18px;
+    }
+
+    .pp-header h3{
+        font-size: 20px;
+    }
+    
+}
