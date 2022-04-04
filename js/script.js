@@ -1,4 +1,38 @@
 
+// /* CLICK THE SLIDER/
+
+var line1 = document.getElementById("line1");
+var line2 = document.getElementById("line2");
+var activex = document.getElementById("activex");
+var image = document.getElementById("about_img");
+
+const software_skills = ["HTML","CSS","Javascript","React Js",
+"Bootstrap","Python","Django","Java","Spring","SQL"];
+
+const DATA_skills = ["Web Scraping","Data Cleansing","Machine Learning","Python",
+"R","Tableau","Data Visualization","Spreadsheets","SQL","Git"];
+
+var profession = document.getElementById("profession");
+
+var skills = document.querySelectorAll(".skill-item");
+
+line1.onclick = function(){
+    activex.style.left = '0px';
+    profession.innerHTML = "Software Engineer";
+    image.src = "assets/images/undraw_programming_re_kg9v.svg";
+    for(i = 0; i<software_skills.length; i++){
+        skills[i].innerHTML = software_skills[i];
+    }
+}
+
+line2.onclick = function(){
+    activex.style.left = '100px';
+    profession.innerHTML = "Data Scientist";
+    image.src = "assets/images/undraw_charts_re_5qe9.svg";
+    for(i = 0; i<DATA_skills.length; i++){
+        skills[i].innerHTML = DATA_skills[i];
+    }
+}
 
 
 /* Toggle Navbar*/
