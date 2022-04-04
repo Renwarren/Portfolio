@@ -407,6 +407,41 @@ button{
 }
 
 /* HOME SECTION */
+
+.controller{
+    position: relative;
+    width: 200px;
+    height: 2px;
+    display: block;
+    background-color: var(--white);
+    margin: 30px;
+}
+
+#line2{
+    height: 2px;
+    width: 100px;
+    cursor: pointer;
+    transform: translateX(100px);
+    transition: 1s;
+}
+
+
+#activex{
+    width:100px;
+    position: absolute;
+    height: 4px;
+    border-radius: 2px;
+    background: var(--main-color);
+    transform: translateY(-5px);
+    transition: 1s;
+}
+
+#line1{
+    height: 2px;
+    width: 100px;
+    cursor: pointer;
+}
+
 .home-section{
     padding: 120px 0;
 }
@@ -432,10 +467,10 @@ button{
 }
 
 
-.home-text h1:hover{
-    -webkit-text-stroke: 0.3px var(--white);
+/* .home-text h1:hover{
+    -webkit-text-stroke: 0.3px var(--white); 
     color: transparent;
-}
+} */
 
 
 .home-text h2{
@@ -889,4 +924,8 @@ button{
         font-size: 20px;
     }
     
+    .controller{
+        margin-left: 32px;
+    }
+
 }
