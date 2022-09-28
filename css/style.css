@@ -409,8 +409,6 @@ button{
 /* HOME SECTION */
 
 
-
-
 .home-section{
     padding: 120px 0;
 }
@@ -479,9 +477,9 @@ button{
     padding: 0 15px;
 }
 
-/*.about-text p{
+/* .about-text p{
     text-align: justify;
-}*/
+} */
 
 .about-img .img-box{
     background-color: var(--white-alpha-25);
@@ -893,8 +891,5 @@ button{
         font-size: 20px;
     }
     
-    .controller{
-        margin-left: 32px;
-    }
 
 }
