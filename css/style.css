@@ -408,39 +408,8 @@ button{
 
 /* HOME SECTION */
 
-.controller{
-    position: relative;
-    width: 200px;
-    height: 2px;
-    display: block;
-    background-color: var(--white);
-    margin: 30px;
-}
-
-#line2{
-    height: 2px;
-    width: 100px;
-    cursor: pointer;
-    transform: translateX(100px);
-    transition: 1s;
-}
 
 
-#activex{
-    width:100px;
-    position: absolute;
-    height: 4px;
-    border-radius: 2px;
-    background: var(--main-color);
-    transform: translateY(-5px);
-    transition: 1s;
-}
-
-#line1{
-    height: 2px;
-    width: 100px;
-    cursor: pointer;
-}
 
 .home-section{
     padding: 120px 0;
@@ -510,9 +479,9 @@ button{
     padding: 0 15px;
 }
 
-.about-text p{
+/*.about-text p{
     text-align: justify;
-}
+}*/
 
 .about-img .img-box{
     background-color: var(--white-alpha-25);
