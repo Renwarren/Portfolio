@@ -860,7 +860,7 @@ button{
         margin-top: 30px;
     }
     .portfolio-item{
-        width: cal(100% - 30px);
+        width: calc(100% - 30px);
     }
     .pp-inner{
         padding: 30px 15px;

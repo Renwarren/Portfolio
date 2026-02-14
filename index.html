@@ -42,7 +42,7 @@
           <div class="home-text">
             <p>Ohayou, I'm</p>
             <h1>Warren Fongang</h1>
-            <h2 id="profession">Software Engineer</h2>
+            <h2 id="profession">Software Engineer II</h2>
             <a href="#about" class="btn link-item">More About Me</a>
             <a href="#portfolio" class="btn link-item">Portfolio</a><br>
           </div>
@@ -72,28 +72,32 @@
           </div>
           <div class="about-text">
             <p>
-              I am a backend software engineer with 3 years of experience developing and deploying apps at scale. 
-              My expertise lies mostly in infrastructure, where I built tools to accelerate other developers' productivity.
-              Apart from that, I like to teach. I used to teach Edmodo programming courses to children in Cameroon. I have taught up to this day 60+ students. <br>  
+              I am a Software Engineer II with expertise in building scalable infrastructure, distributed systems, and observability platforms.
+              I specialize in designing data pipelines, automating operations, and optimizing system performance at scale.
+              My work has driven significant cost savings, improved reliability, and enhanced developer productivity across organizations. <br>
             </p>
             <h2>My Skills</h2>
             <div class="skills">
               <div class="skill-item">Python</div>
               <div class="skill-item">Java</div>
-              <div class="skill-item">Javascript</div>
-              <div class="skill-item">HTML</div>
-              <div class="skill-item">CSS</div>
+              <div class="skill-item">JavaScript</div>
+              <div class="skill-item">TypeScript</div>
+              <div class="skill-item">Golang</div>
+              <div class="skill-item">SQL</div>
+              <div class="skill-item">Spring Boot</div>
+              <div class="skill-item">FastAPI</div>
               <div class="skill-item">React</div>
-              <div class="skill-item">Bootstrap</div>
-              <div class="skill-item">Django</div>
-              <div class="skill-item">Spring</div>
-              <div  class="skill-item">Object Oriented Programming</div>
-              <div  class="skill-item">NoSQL</div>
-              <div  class="skill-item">SQL</div>
-              <div  class="skill-item">Version Control</div>
-              <div  class="skill-item">REST APIs</div>
-              <div  class="skill-item">Unit Testing</div>
-              <div  class="skill-item">Amazon Web Services</div>
+              <div class="skill-item">Flutter</div>
+              <div class="skill-item">Docker</div>
+              <div class="skill-item">Kubernetes</div>
+              <div class="skill-item">AWS</div>
+              <div class="skill-item">Kafka</div>
+              <div class="skill-item">Grafana</div>
+              <div class="skill-item">ElasticSearch</div>
+              <div class="skill-item">Kibana</div>
+              <div class="skill-item">OpenTelemetry</div>
+              <div class="skill-item">REST APIs</div>
+              <div class="skill-item">GraphQL</div>
             </div>
 
             <div class="about-tabs">
@@ -131,30 +135,48 @@
             <div class="tab-content" id="experience">
               <div class="timeline">
                 <div class="timeline-item">
+                  <span class="Date">April 2025 - Present</span>
+                  <h4>Software Engineer II - <span>Cloudflare</span></h4>
+                  <p>
+                    • Automated generation and validation of new customer networking configurations, eliminating manual errors, saving 400+ hours, and reducing onboarding time by 16%. <br>
+                    • Spearheaded the migration of customer edge networking configurations (GRE/IPsec tunnels, Interconnects) from a monolithic YAML repository into a normalized SQL data model, reducing config duplication by 50% and cutting configuration-related incidents by 85%. <br>
+                    • Designed and built scalable real-time data pipelines using Go, Kafka, and ClickHouse to process per-datacenter GRE/IPsec tunnel health, enabling Grafana dashboards with datacenter-level visibility.
+                  </p>
+                </div>
+                <div class="timeline-item">
+                  <span class="Date">April 2025 - Present</span>
+                  <h4>Software Engineer II - <span>Cox Communications</span></h4>
+                  <p>
+                    • Led a team of 5 engineers to build an internal monitoring and analytics platform leveraging AWS, Python, and Kubernetes, driving over 8-figure savings by deprecating a third-party tool's costs. <br>
+                    • Designed and built scalable ETL pipelines using PySpark and Kafka to process and enrich 1B+ daily real-time router alarms, filtering noise and appending customer metadata to enable intelligent alerting. <br>
+                    • Implemented a proactive incident detection and automated ticketing pipeline, reducing customer-reported issues by 45% and increasing CSAT by 12%.
+                  </p>
+                </div>
+                <div class="timeline-item">
+                  <span class="Date">January 2024 - April 2025</span>
+                  <h4>Software Engineer - <span>HubSpot</span></h4>
+                  <p>
+                    • Reduced log storage costs by seven figures and increased retention from 180 to 460 days by converting JSON logs to ORC and optimizing S3 storage with AWS Athena. <br>
+                    • Built end-to-end log, metric, and trace correlation at scale using trace/span IDs and exemplars, reducing root-cause analysis time by 50%. <br>
+                    • Automated OpenTelemetry instrumentation for core internal libraries, feeding 10M+ traces daily into Tempo and reducing debugging time across services.
+                  </p>
+                </div>
+                <div class="timeline-item">
+                  <span class="Date">December 2024 - December 2025</span>
+                  <h4>Tech Lead - <span>PACI</span></h4>
+                  <p>
+                    • Redesigned Python and Golang APIs using OpenAPI specs with auto-generated TypeScript clients, improving cross-team collaboration and reducing integration errors. <br>
+                    • Spearheaded the migration of the entire frontend codebase from JavaScript to TypeScript, improving type safety and leading to a 35% reduction in bugs. <br>
+                    • Led architectural design and deployment using Kubernetes, Docker, PostgreSQL, and AWS, resulting in zero downtime during peak events and a 3x improvement in deployment reliability.
+                  </p>
+                </div>
+                <div class="timeline-item">
                   <span class="Date">May 2023 - August 2023</span>
                   <h4>Software Engineer Intern - <span>Amazon Prime Video</span></h4>
-                  <p> 
-                    • Applied the Software Development Life Cycle to define API contracts and APIs using OpenAPI, Git, and Java which increased content delivery on Prime Video Sports by 52%. <br>
-                    • Spearheaded the development of a client library that seamlessly integrated our APIs, reducing integration time by 90% for external broadcast partners on Prime Video Sports. <br>                   
-                    • Deployed and documented the client library, with usage examples, and code samples using AWS Amplify, Node.js, and JavaScript, slashing the learning curve by 80%. 
-                  </p>
-                </div>
-                <div class="timeline-item">
-                  <span class="Date">May 2022 - August 2022</span>
-                  <h4>Software Engineer Intern - <span>Afriland First Bank</span></h4>
-                  <p> 
-                    • Developed a location-based bank branch finder system for the SARA Mobile App using Java and Flutter enabling customers to locate nearby branches easily resulting in a 20% increase in downloads. <br>
-                    • Implemented search filters to allow users to refine branch search based on criteria such as ATM availability, branch type, and operating hours resulting in a 78% increase in customer satisfaction. <br>                   
-                    • Built an interactive map using Google Maps API and Flutter to visually display branch locations and calculate distances between the user's location and branches.
-                  </p>
-                </div>
-                <div class="timeline-item">
-                  <span class="Date">May 2021 - August 2021</span>
-                  <h4>Software Engineer Intern - <span>Elios Consulting</span></h4>
-                  <p> 
-                    • Led a cross-functional team to implement an internal employee referral platform using Java, Spring, JavaScript and SQL resulting in a 40% reduction in manual paperwork. <br>
-                    • Developed a user-friendly and intuitive web interface using JavaScript, HTML, and CSS leading to a 20% increase in employee interaction with the referral program. <br>                   
-                    • Enhanced the referral platform with automated notifications and reminders to deliver real-time updates reducing referral process bottlenecks by 25%. 
+                  <p>
+                    • Designed API contracts and APIs using OpenAPI, AWS API Gateway, and Java which increased content delivery on Prime Video Sports from 70 to 150+ Live Events per day. <br>
+                    • Engineered a client library in Python and Java that seamlessly integrated our APIs, reducing integration time from 16 hours to 1 hour for external broadcast partners. <br>
+                    • Deployed and documented the client library with usage examples and code samples using AWS Amplify, HTML, CSS, and TypeScript.
                   </p>
                 </div>
               </div>
@@ -181,57 +203,56 @@
           <!-- Portfolio-Item -->
           <div class="portfolio-item">
             <div class="portfolio-item-thumbnail">
-              <img src="assets/images/Js_Corner_1000x572.png" alt="">
+              <img src="assets/images/Uccao.png" alt="Vernala Language Learning Platform">
             </div>
-            <h3 class="portfolio-item-title">J's Corner Restaurant</h3>
+            <h3 class="portfolio-item-title">Vernala</h3>
             <button type = "button" class="btn view-project-btn">View Project</button>
             <div class="portfolio-item-details">
               <div class="description">
-                <p>A Desktop Application to manage orders, inventories and Statistics in a Restaurant. It was a group Project in the Intro to Software Engineering Course.</p>
+                <p>Language-learning software designed to preserve and teach Cameroon languages through interactive lessons and cultural content.</p>
               </div>
               <div class="general-info">
                 <ul>
-                  <li>Created ~ <span>December 2022</span></li>
-                  <li>Tech Stack ~ <span>Java, JavaFx, SQL</span></li>
-                  <li>View Online ~ <span><a href="https://github.com/Renwarren/Sprint_2" target="_blank">J's Corner Restaurant</a></span></li>
+                  <li>Created ~ <span>2024</span></li>
+                  <li>Tech Stack ~ <span>TypeScript, Python, React, FastAPI</span></li>
+                  <li>View Online ~ <span><a href="https://github.com/Vernalo/vernala-backend" target="_blank">Vernala Backend</a></span></li>
                 </ul>
               </div>
             </div>
           </div>
           <div class="portfolio-item">
             <div class="portfolio-item-thumbnail">
-              <img src="assets/images/Wordle_1000x572.png" alt="">
+              <img src="assets/images/undraw_charts_re_5qe9.svg" alt="Alumni Website">
             </div>
-            <h3 class="portfolio-item-title">Wordle Solver</h3>
+            <h3 class="portfolio-item-title">PKFIE Alumni Website</h3>
             <button type = "button" class="btn view-project-btn">View Project</button>
             <div class="portfolio-item-details">
               <div class="description">
-                <p>A Desktop Application that helps you to solve the popular game Wordle. You can either play the game or let an AI try to find the word for you</p>
+                <p>A full-stack platform connecting alumni from PKFIE, featuring member directories, event management, and community engagement tools.</p>
               </div>
               <div class="general-info">
                 <ul>
-                  <li>Created ~ <span>November 2022</span></li>
-                  <li>Tech Stack ~ <span>Python, Pygame</span></li>
-                  <li>View Online ~ <span><a href="https://github.com/Renwarren/Wordle-AI-Agent" target="_blank">Wordle Solver</a></span></li>
+                  <li>Created ~ <span>2024</span></li>
+                  <li>Tech Stack ~ <span>TypeScript, React, Python, FastAPI</span></li>
+                  <li>View Online ~ <span><a href="https://pkfalumni.com" target="_blank">pkfalumni.com</a></span></li>
                 </ul>
               </div>
             </div>
           </div>
           <div class="portfolio-item">
             <div class="portfolio-item-thumbnail">
-              <img src="assets/images/Uccao.png" alt="">
+              <img src="assets/images/undraw_programming_re_kg9v.svg" alt="Cuswap Rate Aggregator">
             </div>
-            <h3 class="portfolio-item-title">A Coffee Landing Page</h3>
+            <h3 class="portfolio-item-title">Cuswap</h3>
             <button type = "button" class="btn view-project-btn">View Project</button>
             <div class="portfolio-item-details">
               <div class="description">
-                <p>Uccao a coffee enterprise in Cameroon asked for a landing page for their website soon to be created.</p>
+                <p>A rate aggregator platform that compares and consolidates pricing information across multiple services to help users find the best deals.</p>
               </div>
               <div class="general-info">
                 <ul>
-                  <li>Created ~ <span>February 2022</span></li>
-                  <li>Tech Stack ~ <span>HTML, CSS</span></li>
-                  <!--  <li>View Online ~ <span><a href="#" target="_blank">www.genetic.com</a></span></li> -->
+                  <li>Created ~ <span>2024</span></li>
+                  <li>Tech Stack ~ <span>TypeScript, Python, React</span></li>
                 </ul>
               </div>
             </div>
@@ -255,16 +276,16 @@
               <form  action="https://formsubmit.co/feebd0abc5efec075fc482cad74d89ea" method="POST">
                 <div class="row">
                   <div class="input-group">
-                    <input type="text" placeholder="Name" class="input-control" required>
+                    <input type="text" name="name" placeholder="Name" class="input-control" required>
                   </div>
                   <div class="input-group">
-                    <input type="email" placeholder="Email" class="input-control" required>
+                    <input type="email" name="email" placeholder="Email" class="input-control" required>
                   </div>
                   <div class="input-group">
-                    <input type="text" placeholder="Subject" class="input-control" required>
+                    <input type="text" name="subject" placeholder="Subject" class="input-control" required>
                   </div>
                   <div class="input-group">
-                    <textarea placeholder="Message" class="input-control" required></textarea>
+                    <textarea name="message" placeholder="Message" class="input-control" required></textarea>
                   </div>
                   <div class="submit-btn">
                     <button type="submit" class="btn">Send Message</button>
@@ -318,8 +339,7 @@
     </div>
   </div>
   <!-- Portfolio Item Details Popup End -->
-  
-  <embed src="assets/music/Tokyo Music Walker -  Colorful Flowers.mp3" loop="true" autostart="true" width="2" height="0">
+
   <script src="js/script.js"></script>
 </body>
 </html>
