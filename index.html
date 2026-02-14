@@ -1,270 +1,406 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <title>Warren Website</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/font-awesome.css">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="icon" href="assets/images/favicon.ico">
-</head>
-<body>
-  
-  <!-- MAIN START -->
-  <div class = "main">
-
-    <!-- Header Start -->
-    <header class="header">
-      <div class="container">
-        <div class="row flex-end">
-          <button class="nav-toggler">
-            <span></span>
-          </button>
-          <nav class="nav">
-            <div class="nav-inner ">
-              <ul>
-                <li><a href="#home" class="nav-item link-item">Home</a></li>
-                <li><a href="#about" class="nav-item link-item">About Me</a></li>
-                <li><a href="#portfolio" class="nav-item link-item">Portfolio</a></li>
-                <li><a href="#contact" class="nav-item link-item">Contact Me</a></li>
-              </ul>
-            </div>
-          </nav>
-        </div>
-      </div>
-    </header>
-    <!-- Header End -->
-
-    <!-- Home Section Start -->
-    <section class = "home-section align-items-center active" id = "home">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="home-text">
-            <p>Ohayou, I'm</p>
-            <h1>Warren Fongang</h1>
-            <h2 id="profession">Software Engineer II</h2>
-            <a href="#about" class="btn link-item">More About Me</a>
-            <a href="#portfolio" class="btn link-item">Portfolio</a><br>
-          </div>
-          <div class="home-img">
-            <div class="img-box">
-              <img id="profile-img" src="assets/images/Warren-Data.png" alt="warren-image">
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Home Section End -->
-
-    <!-- About Section Start -->
-    <section class="about-section sec-padding"  id="about">
-      <div class="container">
-        <div class="row">
-          <div class="section-title">
-            <h2>About Me</h2>
-          </div>
-        </div>
-        <div class="row">
-          <div class="about-img">
-            <div class="img-box">
-              <img id = "about_img" src="assets/images/undraw_programming_re_kg9v.svg" alt="programming">
-            </div>
-          </div>
-          <div class="about-text">
-            <p>
-              I am a Software Engineer II with expertise in building scalable infrastructure, distributed systems, and observability platforms.
-              I specialize in designing data pipelines, automating operations, and optimizing system performance at scale.
-              My work has driven significant cost savings, improved reliability, and enhanced developer productivity across organizations. <br>
-            </p>
-            <h2>My Skills</h2>
-            <div class="skills">
-              <div class="skill-item">Python</div>
-              <div class="skill-item">Java</div>
-              <div class="skill-item">JavaScript</div>
-              <div class="skill-item">TypeScript</div>
-              <div class="skill-item">Golang</div>
-              <div class="skill-item">SQL</div>
-              <div class="skill-item">Spring Boot</div>
-              <div class="skill-item">FastAPI</div>
-              <div class="skill-item">React</div>
-              <div class="skill-item">Flutter</div>
-              <div class="skill-item">Docker</div>
-              <div class="skill-item">Kubernetes</div>
-              <div class="skill-item">AWS</div>
-              <div class="skill-item">Kafka</div>
-              <div class="skill-item">Grafana</div>
-              <div class="skill-item">ElasticSearch</div>
-              <div class="skill-item">Kibana</div>
-              <div class="skill-item">OpenTelemetry</div>
-              <div class="skill-item">REST APIs</div>
-              <div class="skill-item">GraphQL</div>
-            </div>
-
-            <div class="about-tabs">
-              <button type="button" class="tab-item active" data-target="#education">Education</button>
-              <button type="button" class="tab-item" data-target="#experience">Experience</button>
-            </div>
-
-            <!-- Education Start -->
-            <div class="tab-content active" id="education">
-              <div class="timeline">
-                <div class="timeline-item">
-                  <span class="Date">January 2020 - December 2023</span>
-                  <h4>Bachelor of Science In Computer Science - <span>Kennesaw State University</span></h4>
-                  <p>
-                    <span style="font-weight: 700">Cumulative GPA:</span> 4.0/4.0 <br>
-                    <span style="font-weight: 700">Relevant Coursework:</span> Introduction to Software Engineering, Data Structures and Algorithms, Data Mining, Artificial Intelligence, Operating Systems, Parallel & Distributed Computing<br>
-                  </p>
-                </div>
-
-                <div class="timeline-item">
-                  <span class="Date">2022</span>
-                  <h4>Google Data Analytics Professional Certificate - <span>COURSERA</span></h4>
-                  <p>
-                    • I learned the different phases of the Data Analysis Process <br>
-                    • I learned about various technologies such as Tableau to visualize data and SQL to process data. <br>
-                    • I also learned about Excel including concepts like pivot tables, charts, VLookups.
-                    <a href="assets/docs/Coursera Specialization.pdf" target="_blank">View Certificate</a>
-                  </p>
-                </div>
-              </div>
-            </div>
-            <!-- Education End -->
-
-            <!-- Experience Start -->
-            <div class="tab-content" id="experience">
-              <div class="timeline">
-                <div class="timeline-item">
-                  <span class="Date">April 2025 - Present</span>
-                  <h4>Software Engineer II - <span>Cloudflare</span></h4>
-                  <p>
-                    • Automated generation and validation of new customer networking configurations, eliminating manual errors, saving 400+ hours, and reducing onboarding time by 16%. <br>
-                    • Spearheaded the migration of customer edge networking configurations (GRE/IPsec tunnels, Interconnects) from a monolithic YAML repository into a normalized SQL data model, reducing config duplication by 50% and cutting configuration-related incidents by 85%. <br>
-                    • Designed and built scalable real-time data pipelines using Go, Kafka, and ClickHouse to process per-datacenter GRE/IPsec tunnel health, enabling Grafana dashboards with datacenter-level visibility.
-                  </p>
-                </div>
-                <div class="timeline-item">
-                  <span class="Date">April 2025 - Present</span>
-                  <h4>Software Engineer II - <span>Cox Communications</span></h4>
-                  <p>
-                    • Led a team of 5 engineers to build an internal monitoring and analytics platform leveraging AWS, Python, and Kubernetes, driving over 8-figure savings by deprecating a third-party tool's costs. <br>
-                    • Designed and built scalable ETL pipelines using PySpark and Kafka to process and enrich 1B+ daily real-time router alarms, filtering noise and appending customer metadata to enable intelligent alerting. <br>
-                    • Implemented a proactive incident detection and automated ticketing pipeline, reducing customer-reported issues by 45% and increasing CSAT by 12%.
-                  </p>
-                </div>
-                <div class="timeline-item">
-                  <span class="Date">January 2024 - April 2025</span>
-                  <h4>Software Engineer - <span>HubSpot</span></h4>
-                  <p>
-                    • Reduced log storage costs by seven figures and increased retention from 180 to 460 days by converting JSON logs to ORC and optimizing S3 storage with AWS Athena. <br>
-                    • Built end-to-end log, metric, and trace correlation at scale using trace/span IDs and exemplars, reducing root-cause analysis time by 50%. <br>
-                    • Automated OpenTelemetry instrumentation for core internal libraries, feeding 10M+ traces daily into Tempo and reducing debugging time across services.
-                  </p>
-                </div>
-                <div class="timeline-item">
-                  <span class="Date">December 2024 - December 2025</span>
-                  <h4>Tech Lead - <span>PACI</span></h4>
-                  <p>
-                    • Redesigned Python and Golang APIs using OpenAPI specs with auto-generated TypeScript clients, improving cross-team collaboration and reducing integration errors. <br>
-                    • Spearheaded the migration of the entire frontend codebase from JavaScript to TypeScript, improving type safety and leading to a 35% reduction in bugs. <br>
-                    • Led architectural design and deployment using Kubernetes, Docker, PostgreSQL, and AWS, resulting in zero downtime during peak events and a 3x improvement in deployment reliability.
-                  </p>
-                </div>
-                <div class="timeline-item">
-                  <span class="Date">May 2023 - August 2023</span>
-                  <h4>Software Engineer Intern - <span>Amazon Prime Video</span></h4>
-                  <p>
-                    • Designed API contracts and APIs using OpenAPI, AWS API Gateway, and Java which increased content delivery on Prime Video Sports from 70 to 150+ Live Events per day. <br>
-                    • Engineered a client library in Python and Java that seamlessly integrated our APIs, reducing integration time from 16 hours to 1 hour for external broadcast partners. <br>
-                    • Deployed and documented the client library with usage examples and code samples using AWS Amplify, HTML, CSS, and TypeScript.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <!-- Experience End -->
-          </div>
-        </div>
-      </div>
-
-    </section>
-    
-
-    <!-- About Section End -->
-
-    <!-- Portfolio Section Start -->
-    <section class="portfolio-section sec-padding " id = "portfolio">
-      <div class="container">
-        <div class="row">
-          <div class="section-title">
-            <h2>Recent Projects</h2>
-          </div>
-        </div>
-        <div class="row">
-          <!-- Portfolio-Item -->
-          <div class="portfolio-item">
-            <div class="portfolio-item-thumbnail">
-              <img src="assets/images/Uccao.png" alt="Vernala Language Learning Platform">
-            </div>
-            <h3 class="portfolio-item-title">Vernala</h3>
-            <button type = "button" class="btn view-project-btn">View Project</button>
-            <div class="portfolio-item-details">
-              <div class="description">
-                <p>Language-learning software designed to preserve and teach Cameroon languages through interactive lessons and cultural content.</p>
-              </div>
-              <div class="general-info">
+  <head>
+    <title>Warren Website</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/font-awesome.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="assets/images/favicon.ico" />
+  </head>
+  <body>
+    <!-- MAIN START -->
+    <div class="main">
+      <!-- Header Start -->
+      <header class="header">
+        <div class="container">
+          <div class="row flex-end">
+            <button class="nav-toggler">
+              <span></span>
+            </button>
+            <nav class="nav">
+              <div class="nav-inner">
                 <ul>
-                  <li>Created ~ <span>2024</span></li>
-                  <li>Tech Stack ~ <span>TypeScript, Python, React, FastAPI</span></li>
-                  <li>View Online ~ <span><a href="https://github.com/Vernalo/vernala-backend" target="_blank">Vernala Backend</a></span></li>
+                  <li><a href="#home" class="nav-item link-item">Home</a></li>
+                  <li>
+                    <a href="#about" class="nav-item link-item">About Me</a>
+                  </li>
+                  <li>
+                    <a href="#portfolio" class="nav-item link-item"
+                      >Portfolio</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#contact" class="nav-item link-item">Contact Me</a>
+                  </li>
                 </ul>
               </div>
-            </div>
+            </nav>
           </div>
-          <div class="portfolio-item">
-            <div class="portfolio-item-thumbnail">
-              <img src="assets/images/undraw_charts_re_5qe9.svg" alt="Alumni Website">
-            </div>
-            <h3 class="portfolio-item-title">PKFIE Alumni Website</h3>
-            <button type = "button" class="btn view-project-btn">View Project</button>
-            <div class="portfolio-item-details">
-              <div class="description">
-                <p>A full-stack platform connecting alumni from PKFIE, featuring member directories, event management, and community engagement tools.</p>
-              </div>
-              <div class="general-info">
-                <ul>
-                  <li>Created ~ <span>2024</span></li>
-                  <li>Tech Stack ~ <span>TypeScript, React, Python, FastAPI</span></li>
-                  <li>View Online ~ <span><a href="https://pkfalumni.com" target="_blank">pkfalumni.com</a></span></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="portfolio-item">
-            <div class="portfolio-item-thumbnail">
-              <img src="assets/images/undraw_programming_re_kg9v.svg" alt="Cuswap Rate Aggregator">
-            </div>
-            <h3 class="portfolio-item-title">Cuswap</h3>
-            <button type = "button" class="btn view-project-btn">View Project</button>
-            <div class="portfolio-item-details">
-              <div class="description">
-                <p>A rate aggregator platform that compares and consolidates pricing information across multiple services to help users find the best deals.</p>
-              </div>
-              <div class="general-info">
-                <ul>
-                  <li>Created ~ <span>2024</span></li>
-                  <li>Tech Stack ~ <span>TypeScript, Python, React</span></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
         </div>
-      </div>
-    </section>
-    <!-- Portfolio Section End -->
+      </header>
+      <!-- Header End -->
 
-    <!-- Contact Me Section START -->
-      <section class="contact-section sec-padding " id="contact">
+      <!-- Home Section Start -->
+      <section class="home-section align-items-center active" id="home">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="home-text">
+              <p>Ohayou, I'm</p>
+              <h1>Warren Fongang</h1>
+              <h2 id="profession">Software Engineer II</h2>
+              <a href="#about" class="btn link-item">More About Me</a>
+              <a href="#portfolio" class="btn link-item">Portfolio</a><br />
+            </div>
+            <div class="home-img">
+              <div class="img-box">
+                <img
+                  id="profile-img"
+                  src="assets/images/Warren-Data.png"
+                  alt="warren"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Home Section End -->
+
+      <!-- About Section Start -->
+      <section class="about-section sec-padding" id="about">
+        <div class="container">
+          <div class="row">
+            <div class="section-title">
+              <h2>About Me</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="about-img">
+              <div class="img-box">
+                <img
+                  id="about_img"
+                  src="assets/images/undraw_programming_re_kg9v.svg"
+                  alt="programming"
+                />
+              </div>
+            </div>
+            <div class="about-text">
+              <p>
+                I am a Software Engineer II with expertise in building scalable
+                infrastructure, distributed systems, and observability
+                platforms. I specialize in designing data pipelines, automating
+                operations, and optimizing system performance at scale. My work
+                has driven significant cost savings, improved reliability, and
+                enhanced developer productivity across organizations. <br />
+              </p>
+              <h2>My Skills</h2>
+              <div class="skills">
+                <div class="skill-item">Python</div>
+                <div class="skill-item">Java</div>
+                <div class="skill-item">JavaScript</div>
+                <div class="skill-item">TypeScript</div>
+                <div class="skill-item">Golang</div>
+                <div class="skill-item">SQL</div>
+                <div class="skill-item">Spring Boot</div>
+                <div class="skill-item">FastAPI</div>
+                <div class="skill-item">React</div>
+                <div class="skill-item">Flutter</div>
+                <div class="skill-item">Docker</div>
+                <div class="skill-item">Kubernetes</div>
+                <div class="skill-item">AWS</div>
+                <div class="skill-item">Kafka</div>
+                <div class="skill-item">Grafana</div>
+                <div class="skill-item">ElasticSearch</div>
+                <div class="skill-item">Kibana</div>
+                <div class="skill-item">OpenTelemetry</div>
+                <div class="skill-item">REST APIs</div>
+                <div class="skill-item">GraphQL</div>
+              </div>
+
+              <div class="about-tabs">
+                <button
+                  type="button"
+                  class="tab-item active"
+                  data-target="#education"
+                >
+                  Education
+                </button>
+                <button
+                  type="button"
+                  class="tab-item"
+                  data-target="#experience"
+                >
+                  Experience
+                </button>
+              </div>
+
+              <!-- Education Start -->
+              <div class="tab-content active" id="education">
+                <div class="timeline">
+                  <div class="timeline-item">
+                    <span class="Date">January 2020 - December 2023</span>
+                    <h4>
+                      Bachelor of Science In Computer Science -
+                      <span>Kennesaw State University</span>
+                    </h4>
+                    <p>
+                      <span style="font-weight: 700">Cumulative GPA:</span>
+                      4.0/4.0 <br />
+                      <span style="font-weight: 700">Relevant Coursework:</span>
+                      Introduction to Software Engineering, Data Structures and
+                      Algorithms, Data Mining, Artificial Intelligence,
+                      Operating Systems, Parallel & Distributed Computing<br />
+                    </p>
+                  </div>
+
+                  <div class="timeline-item">
+                    <span class="Date">2022</span>
+                    <h4>
+                      Google Data Analytics Professional Certificate -
+                      <span>COURSERA</span>
+                    </h4>
+                    <p>
+                      • I learned the different phases of the Data Analysis
+                      Process <br />
+                      • I learned about various technologies such as Tableau to
+                      visualize data and SQL to process data. <br />
+                      • I also learned about Excel including concepts like pivot
+                      tables, charts, VLookups.
+                      <a
+                        href="assets/docs/Coursera Specialization.pdf"
+                        target="_blank"
+                        >View Certificate</a
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- Education End -->
+
+              <!-- Experience Start -->
+              <div class="tab-content" id="experience">
+                <div class="timeline">
+                  <div class="timeline-item">
+                    <span class="Date">April 2025 - Present</span>
+                    <h4>Software Engineer II - <span>Cloudflare</span></h4>
+                    <p>
+                      • Automated generation and validation of new customer
+                      networking configurations, eliminating manual errors,
+                      saving 400+ hours, and reducing onboarding time by 16%.
+                      <br />
+                      • Spearheaded the migration of customer edge networking
+                      configurations (GRE/IPsec tunnels, Interconnects) from a
+                      monolithic YAML repository into a normalized SQL data
+                      model, reducing config duplication by 50% and cutting
+                      configuration-related incidents by 85%. <br />
+                      • Designed and built scalable real-time data pipelines
+                      using Go, Kafka, and ClickHouse to process per-datacenter
+                      GRE/IPsec tunnel health, enabling Grafana dashboards with
+                      datacenter-level visibility.
+                    </p>
+                  </div>
+                  <div class="timeline-item">
+                    <span class="Date">April 2025 - Present</span>
+                    <h4>
+                      Software Engineer II - <span>Cox Communications</span>
+                    </h4>
+                    <p>
+                      • Led a team of 5 engineers to build an internal
+                      monitoring and analytics platform leveraging AWS, Python,
+                      and Kubernetes, driving over 8-figure savings by
+                      deprecating a third-party tool's costs. <br />
+                      • Designed and built scalable ETL pipelines using PySpark
+                      and Kafka to process and enrich 1B+ daily real-time router
+                      alarms, filtering noise and appending customer metadata to
+                      enable intelligent alerting. <br />
+                      • Implemented a proactive incident detection and automated
+                      ticketing pipeline, reducing customer-reported issues by
+                      45% and increasing CSAT by 12%.
+                    </p>
+                  </div>
+                  <div class="timeline-item">
+                    <span class="Date">January 2024 - April 2025</span>
+                    <h4>Software Engineer - <span>HubSpot</span></h4>
+                    <p>
+                      • Reduced log storage costs by seven figures and increased
+                      retention from 180 to 460 days by converting JSON logs to
+                      ORC and optimizing S3 storage with AWS Athena. <br />
+                      • Built end-to-end log, metric, and trace correlation at
+                      scale using trace/span IDs and exemplars, reducing
+                      root-cause analysis time by 50%. <br />
+                      • Automated OpenTelemetry instrumentation for core
+                      internal libraries, feeding 10M+ traces daily into Tempo
+                      and reducing debugging time across services.
+                    </p>
+                  </div>
+                  <div class="timeline-item">
+                    <span class="Date">December 2024 - December 2025</span>
+                    <h4>Tech Lead - <span>PACI</span></h4>
+                    <p>
+                      • Redesigned Python and Golang APIs using OpenAPI specs
+                      with auto-generated TypeScript clients, improving
+                      cross-team collaboration and reducing integration errors.
+                      <br />
+                      • Spearheaded the migration of the entire frontend
+                      codebase from JavaScript to TypeScript, improving type
+                      safety and leading to a 35% reduction in bugs. <br />
+                      • Led architectural design and deployment using
+                      Kubernetes, Docker, PostgreSQL, and AWS, resulting in zero
+                      downtime during peak events and a 3x improvement in
+                      deployment reliability.
+                    </p>
+                  </div>
+                  <div class="timeline-item">
+                    <span class="Date">May 2023 - August 2023</span>
+                    <h4>
+                      Software Engineer Intern - <span>Amazon Prime Video</span>
+                    </h4>
+                    <p>
+                      • Designed API contracts and APIs using OpenAPI, AWS API
+                      Gateway, and Java which increased content delivery on
+                      Prime Video Sports from 70 to 150+ Live Events per day.
+                      <br />
+                      • Engineered a client library in Python and Java that
+                      seamlessly integrated our APIs, reducing integration time
+                      from 16 hours to 1 hour for external broadcast partners.
+                      <br />
+                      • Deployed and documented the client library with usage
+                      examples and code samples using AWS Amplify, HTML, CSS,
+                      and TypeScript.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- Experience End -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section End -->
+
+      <!-- Portfolio Section Start -->
+      <section class="portfolio-section sec-padding" id="portfolio">
+        <div class="container">
+          <div class="row">
+            <div class="section-title">
+              <h2>Recent Projects</h2>
+            </div>
+          </div>
+          <div class="row">
+            <!-- Portfolio-Item -->
+            <div class="portfolio-item">
+              <div class="portfolio-item-thumbnail">
+                <img
+                  src="assets/images/Uccao.png"
+                  alt="Vernala Language Learning Platform"
+                />
+              </div>
+              <h3 class="portfolio-item-title">Vernala</h3>
+              <button type="button" class="btn view-project-btn">
+                View Project
+              </button>
+              <div class="portfolio-item-details">
+                <div class="description">
+                  <p>
+                    Language-learning software designed to preserve and teach
+                    Cameroon languages through interactive lessons and cultural
+                    content.
+                  </p>
+                </div>
+                <div class="general-info">
+                  <ul>
+                    <li>Created ~ <span>2024</span></li>
+                    <li>
+                      Tech Stack ~
+                      <span>TypeScript, Python, React, FastAPI</span>
+                    </li>
+                    <li>
+                      View Online ~
+                      <span
+                        ><a
+                          href="https://github.com/Vernalo/vernala-backend"
+                          target="_blank"
+                          >Vernala Backend</a
+                        ></span
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-item">
+              <div class="portfolio-item-thumbnail">
+                <img
+                  src="assets/images/undraw_charts_re_5qe9.svg"
+                  alt="Alumni Website"
+                />
+              </div>
+              <h3 class="portfolio-item-title">PKFIE Alumni Website</h3>
+              <button type="button" class="btn view-project-btn">
+                View Project
+              </button>
+              <div class="portfolio-item-details">
+                <div class="description">
+                  <p>
+                    A full-stack platform connecting alumni from PKFIE,
+                    featuring member directories, event management, and
+                    community engagement tools.
+                  </p>
+                </div>
+                <div class="general-info">
+                  <ul>
+                    <li>Created ~ <span>2024</span></li>
+                    <li>
+                      Tech Stack ~
+                      <span>TypeScript, React, Python, FastAPI</span>
+                    </li>
+                    <li>
+                      View Online ~
+                      <span
+                        ><a href="https://pkfalumni.com" target="_blank"
+                          >pkfalumni.com</a
+                        ></span
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-item">
+              <div class="portfolio-item-thumbnail">
+                <img
+                  src="assets/images/undraw_programming_re_kg9v.svg"
+                  alt="Cuswap Rate Aggregator"
+                />
+              </div>
+              <h3 class="portfolio-item-title">Cuswap</h3>
+              <button type="button" class="btn view-project-btn">
+                View Project
+              </button>
+              <div class="portfolio-item-details">
+                <div class="description">
+                  <p>
+                    A rate aggregator platform that compares and consolidates
+                    pricing information across multiple services to help users
+                    find the best deals.
+                  </p>
+                </div>
+                <div class="general-info">
+                  <ul>
+                    <li>Created ~ <span>2024</span></li>
+                    <li>Tech Stack ~ <span>TypeScript, Python, React</span></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Portfolio Section End -->
+
+      <!-- Contact Me Section START -->
+      <section class="contact-section sec-padding" id="contact">
         <div class="container">
           <div class="row">
             <div class="section-title">
@@ -273,19 +409,45 @@
           </div>
           <div class="row">
             <div class="contact-form">
-              <form  action="https://formsubmit.co/feebd0abc5efec075fc482cad74d89ea" method="POST">
+              <form
+                action="https://formsubmit.co/feebd0abc5efec075fc482cad74d89ea"
+                method="POST"
+              >
                 <div class="row">
                   <div class="input-group">
-                    <input type="text" name="name" placeholder="Name" class="input-control" required>
+                    <input
+                      type="text"
+                      name="name"
+                      placeholder="Name"
+                      class="input-control"
+                      required
+                    />
                   </div>
                   <div class="input-group">
-                    <input type="email" name="email" placeholder="Email" class="input-control" required>
+                    <input
+                      type="email"
+                      name="email"
+                      placeholder="Email"
+                      class="input-control"
+                      required
+                    />
                   </div>
                   <div class="input-group">
-                    <input type="text" name="subject" placeholder="Subject" class="input-control" required>
+                    <input
+                      type="text"
+                      name="subject"
+                      placeholder="Subject"
+                      class="input-control"
+                      required
+                    />
                   </div>
                   <div class="input-group">
-                    <textarea name="message" placeholder="Message" class="input-control" required></textarea>
+                    <textarea
+                      name="message"
+                      placeholder="Message"
+                      class="input-control"
+                      required
+                    ></textarea>
                   </div>
                   <div class="submit-btn">
                     <button type="submit" class="btn">Send Message</button>
@@ -305,10 +467,22 @@
               <div class="contact-info-item">
                 <h3>Follow Me</h3>
                 <div class="social-links">
-                  <a href="https://www.youtube.com/channel/UCHleqKCGHuczU_ZKfi8hPuw" target="_blank"><i class="fab fa-youtube"></i></a>
-                  <a href="https://www.linkedin.com/in/warren-fongang-chendjou/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                  <a href="https://github.com/Renwarren/" target="_blank"><i class="fab fa-github"></i></a>
-                  <a href="https://www.instagram.com/rensama88/" target="_blank"><i class="fab fa-instagram"></i></a>
+                  <a
+                    href="https://www.youtube.com/channel/UCHleqKCGHuczU_ZKfi8hPuw"
+                    target="_blank"
+                    ><i class="fab fa-youtube"></i
+                  ></a>
+                  <a
+                    href="https://www.linkedin.com/in/warren-fongang-chendjou/"
+                    target="_blank"
+                    ><i class="fab fa-linkedin"></i
+                  ></a>
+                  <a href="https://github.com/Renwarren/" target="_blank"
+                    ><i class="fab fa-github"></i
+                  ></a>
+                  <a href="https://www.instagram.com/rensama88/" target="_blank"
+                    ><i class="fab fa-instagram"></i
+                  ></a>
                   <!-- <a href="https://www.inkitt.com/Ren_Sama" target="_blank"><i class="fas fa-book-open"></i></a> -->
                 </div>
               </div>
@@ -316,36 +490,36 @@
           </div>
         </div>
       </section>
-    <!-- Contact Me section end -->
-
-
-
-  </div>
-  <!-- MAIN END -->
-  <!-- Portfolio Item Details Popup Start -->
-  <div class="portfolio-popup"> 
-    <div class="pp-inner">
-      <div class="pp-content">
-        <div class="pp-header">
-          <button type ="button" class="btn pp-close"><i class="fas fa-times"></i></button>
-          <div class="pp-thumbnail">
-            <img src="" alt="pp-thumbnail">
+      <!-- Contact Me section end -->
+    </div>
+    <!-- MAIN END -->
+    <!-- Portfolio Item Details Popup Start -->
+    <div class="portfolio-popup">
+      <div class="pp-inner">
+        <div class="pp-content">
+          <div class="pp-header">
+            <button type="button" class="btn pp-close">
+              <i class="fas fa-times"></i>
+            </button>
+            <div class="pp-thumbnail">
+              <img src="" alt="pp-thumbnail" />
+            </div>
+            <h3></h3>
           </div>
-          <h3></h3>
-        </div>
-        <div class="pp-body">
+          <div class="pp-body"></div>
         </div>
       </div>
     </div>
-  </div>
-  <!-- Portfolio Item Details Popup End -->
+    <!-- Portfolio Item Details Popup End -->
 
-  <!-- Background Music (plays on user interaction) -->
-  <audio id="bgMusic" loop>
-    <source src="assets/music/Tokyo Music Walker -  Colorful Flowers.mp3" type="audio/mpeg">
-  </audio>
+    <!-- Background Music (plays on user interaction) -->
+    <audio id="bgMusic" loop>
+      <source
+        src="assets/music/Tokyo Music Walker -  Colorful Flowers.mp3"
+        type="audio/mpeg"
+      />
+    </audio>
 
-  <script src="js/script.js"></script>
-</body>
+    <script src="js/script.js"></script>
+  </body>
 </html>
-
