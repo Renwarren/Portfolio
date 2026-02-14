@@ -1,4 +1,8 @@
 
+/* Background Music */
+const bgMusic = document.getElementById("bgMusic");
+let musicStarted = false;
+
 /* Toggle Navbar*/
 const navToggler = document.querySelector(".nav-toggler");
 navToggler.addEventListener("click",()=>{
@@ -18,8 +22,14 @@ function toggleNavBar(){
 /*ACTIVE SECTION*/
 document.addEventListener("click",(e)=>{
      if(e.target.classList.contains("link-item") && e.target.hash !== ""){
+        // Start music on first interaction (when clicking "More About Me" or any link)
+        if(!musicStarted && bgMusic){
+            bgMusic.play().catch(err => console.log("Audio play failed:", err));
+            musicStarted = true;
+        }
+
         navToggler.classList.add("hide");
-     
+
      if(e.target.classList.contains("nav-item")){
          toggleNavBar();
      }
