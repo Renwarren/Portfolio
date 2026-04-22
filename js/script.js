@@ -1,6 +1,8 @@
 
 /* Background Music */
-const bgMusic = document.getElementById("bgMusic");
+
+// commenting to remove music
+// const bgMusic = document.getElementById("bgMusicD");
 let musicStarted = false;
 
 /* Toggle Navbar*/
